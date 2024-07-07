@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Newsite</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="tnav">
+      <div class="mnav">
+        <a href="#" onclick="reload()">
+          <img src="Newsite.png" alt="companylogo" />
+        </a>
+        <div class="navlinks">
+          <ul>
+            <li class="hnav" id="ipl" onclick="onNavItemClick('ipl')">IPL</li>
+            <li class="hnav" id="finance" onclick="onNavItemClick('finance')">
+              Finance
+            </li>
+            <li class="hnav" id="politics" onclick="onNavItemClick('politics')">
+              Politics
+            </li>
+          </ul>
+        </div>
+        <div class="search flex">
+          <input
+            id="searchtext"
+            type="text"
+            class="news-srch"
+            placeholder="Search Topic ..."
+          />
+          <button id="srcbtn" class="search-btn">Search</button>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div class="mcard container" id="micard"></div>
+    </main>
+
+    <template id="temp-newscard">
+      <div class="newstemp">
+        <div class="card">
+          <img
+            src="https://via.placeholder.com/400x200"
+            alt="news-img"
+            id="imgofnews"
+          />
+        </div>
+        <div class="ccont">
+          <h3 class="newstitle" id="newstitle">Title of News</h3>
+          <h5 class="newssource" id="newssource">End Gadget 15/12/2004/</h5>
+          <p class="newsdata" id="newsdata">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Repellendus molestiae doloribus deserunt dolores animi at blanditiis
+            eligendi?!
+          </p>
+        </div>
+      </div>
+    </template>
+
+    <script src="script.js"></script>
+  </body>
+</html>
